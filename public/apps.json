@@ -1,0 +1,218 @@
+[
+  {
+    "image": "https://i.ibb.co.com/pBm1Dk2w/img1.png",
+    "title": "ZenFlow",
+    "companyName": "Mindful Tech Labs",
+    "id": 101,
+    "description": "ZenFlow is a sophisticated productivity ecosystem designed to help you reclaim your focus in an era of constant digital distractions. By integrating the scientifically proven Pomodoro technique with customizable deep-work sessions, the app creates a structured environment where your concentration can thrive.\n\nBeyond simple time tracking, the platform offers a curated library of high-fidelity ambient soundscapes and guided breathing exercises. These features are strategically designed to lower cortisol levels and prevent the mental fatigue often associated with long hours of intense cognitive labor.\n\nTo ensure long-term wellness, ZenFlow provides detailed analytical insights into your daily focus patterns and burnout risks. This data-driven approach allows you to optimize your workflow based on your natural circadian rhythms, fostering a sustainable balance between peak performance and necessary mental recovery.",
+    "size": 42,
+    "reviews": 12500,
+    "ratingAvg": 4.8,
+    "downloads": 500000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 150 },
+      { "name": "3 star", "count": 450 },
+      { "name": "4 star", "count": 1200 },
+      { "name": "5 star", "count": 10500 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/yBqY6Ckn/img2.png",
+    "title": "CryptoVault",
+    "companyName": "SecureChain Inc.",
+    "id": 102,
+    "description": "CryptoVault represents the pinnacle of mobile asset security, offering hardware-grade encryption protocols to safeguard your digital wealth. By utilizing advanced biometric authentication and multi-signature authorization, the app ensures that your private keys remain exclusively under your control at all times.\n\nThe application provides a seamless window into the complex world of decentralized finance through an intuitive real-time market tracker. Users can monitor price fluctuations across thousands of tokens, manage diverse portfolios, and execute swaps with minimal slippage through integrated liquidity providers.\n\nDesigned for both novices and power users, the platform includes comprehensive educational modules and automated tax reporting tools. This holistic approach simplifies the management of digital assets while providing the deep technical transparency required for professional-level auditing and regulatory compliance.",
+    "size": 115,
+    "reviews": 8900,
+    "ratingAvg": 4.2,
+    "downloads": 1000000,
+    "ratings": [
+      { "name": "1 star", "count": 800 },
+      { "name": "2 star", "count": 400 },
+      { "name": "3 star", "count": 900 },
+      { "name": "4 star", "count": 2500 },
+      { "name": "5 star", "count": 4300 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/rKQ206cT/Gemini-Generated-Image-ke0iiike0iiike0i.png",
+    "title": "RecipeRun",
+    "companyName": "Gourmet Apps",
+    "id": 103,
+    "description": "RecipeRun revolutionizes the kitchen experience by deploying advanced artificial intelligence to automate the often tedious process of meal planning. The system learns your unique culinary preferences, caloric requirements, and flavor profiles to suggest a diverse weekly menu that keeps your dining experience exciting.\n\nThe app's standout feature is its intelligent pantry management system, which scans your existing inventory to suggest recipes that utilize ingredients you already own. This proactive approach significantly reduces food waste and saves money by ensuring every item in your refrigerator is used efficiently before its expiration date.\n\nOnce your menu is finalized, RecipeRun automatically compiles a comprehensive, categorized shopping list that can be synced across multiple devices or sent directly to local delivery services. This streamlined workflow transforms the grocery shopping experience from a chaotic chore into a precise, time-saving operation tailored to your lifestyle.",
+    "size": 68,
+    "reviews": 21000,
+    "ratingAvg": 4.6,
+    "downloads": 2500000,
+    "ratings": [
+      { "name": "1 star", "count": 500 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 1200 },
+      { "name": "4 star", "count": 5000 },
+      { "name": "5 star", "count": 14000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/9Hrz3437/Gemini-Generated-Image-d0g3shd0g3shd0g3.png",
+    "title": "PixelPro Editor",
+    "companyName": "Creative Suite",
+    "id": 104,
+    "description": "PixelPro Editor brings a professional-tier desktop post-processing suite to the palm of your hand, specifically optimized for high-resolution mobile photography. With full support for uncompressed RAW files, the app allows photographers to retain maximum dynamic range and detail for precision editing.\n\nThe core of the application features an advanced layer management system, enabling non-destructive workflows through masks, adjustment layers, and complex blending modes. This flexibility allows for intricate compositing and localized color grading that was previously only possible on expensive workstation computers.\n\nTo complement its powerful manual tools, PixelPro offers a range of AI-accelerated features such as intelligent subject selection, sky replacement, and noise reduction. These tools work in harmony with a customizable interface, allowing both professional creators and hobbyists to achieve a cinematic aesthetic with unprecedented speed.",
+    "size": 210,
+    "reviews": 45000,
+    "ratingAvg": 4.5,
+    "downloads": 5000000,
+    "ratings": [
+      { "name": "1 star", "count": 1200 },
+      { "name": "2 star", "count": 800 },
+      { "name": "3 star", "count": 3000 },
+      { "name": "4 star", "count": 10000 },
+      { "name": "5 star", "count": 30000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/q3jChfCv/Gemini-Generated-Image-2vnm162vnm162vnm.png",
+    "title": "FitTrack Pro",
+    "companyName": "BioMetric Systems",
+    "id": 105,
+    "description": "FitTrack Pro acts as a comprehensive biological dashboard, seamlessly aggregating data from your wearable devices to provide a 360-degree view of your physiological health. By monitoring heart rate variability (HRV) and resting pulse, the app calculates a daily readiness score to help you train more effectively.\n\nThe sleep analysis engine goes beyond simple duration, breaking down your night into light, deep, and REM cycles while monitoring oxygen saturation and respiratory rates. This granular data allows the app to identify potential sleep disturbances and provide personalized hygiene tips to improve your overall restorative quality.\n\nLong-term health trends are visualized through interactive charts that highlight progress in cardiac efficiency and metabolic health over months or years. By transforming raw biometric data into actionable insights, FitTrack Pro empowers you to make informed decisions about your exercise intensity, nutrition, and recovery protocols.",
+    "size": 85,
+    "reviews": 3200,
+    "ratingAvg": 3.9,
+    "downloads": 150000,
+    "ratings": [
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 600 },
+      { "name": "4 star", "count": 900 },
+      { "name": "5 star", "count": 1000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/b52bXsMz/Gemini-Generated-Image-42xedd42xedd42xe.png",
+    "title": "LangLeap",
+    "companyName": "Polyglot Labs",
+    "id": 106,
+    "description": "LangLeap reimagines the language-learning journey by moving away from rote memorization and toward deep, narrative-driven immersion. By utilizing a massive library of interactive stories across 50+ languages, users acquire vocabulary and grammar naturally through context and emotional engagement.\n\nThe platform's proprietary voice recognition technology provides immediate feedback on your pronunciation, acting as a virtual tutor that helps you master the nuances of native accents. This interactive feedback loop builds the conversational confidence necessary for real-world interactions, bridging the gap between study and fluency.\n\nAdaptive learning algorithms monitor your retention rates and automatically adjust the difficulty level of new content to keep you in a state of optimal challenge. Whether you are a complete beginner or an advanced speaker, LangLeap provides a personalized curriculum that evolves with your skills, ensuring consistent progress toward your linguistic goals.",
+    "size": 130,
+    "reviews": 78000,
+    "ratingAvg": 4.7,
+    "downloads": 10000000,
+    "ratings": [
+      { "name": "1 star", "count": 1500 },
+      { "name": "2 star", "count": 1000 },
+      { "name": "3 star", "count": 4500 },
+      { "name": "4 star", "count": 15000 },
+      { "name": "5 star", "count": 56000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/jPRVWFK1/Gemini-Generated-Image-yyrkevyyrkevyyrk.png",
+    "title": "StarGazer AR",
+    "companyName": "StarGazer AR transforms your mobile device into a powerful window to the cosmos, using augmented reality to identify celestial bodies with pinpoint accuracy. Simply point your camera toward the sky, and the app will overlay constellations, planets, and distant nebulae directly onto your live view.\n\nThe experience is powered by a comprehensive astronomical database that tracks the real-time positions of satellites, including the International Space Station, and upcoming meteor showers. Detailed historical data and scientific facts are provided for every object you discover, making it an invaluable tool for both amateur astronomers and educators.\n\nWith its advanced 'Time Travel' feature, you can view the night sky as it appeared thousands of years ago or how it will look in the distant future. This immersive perspective allows users to explore the rhythmic cycles of the universe and gain a deeper appreciation for our place within the vast celestial tapestry.",
+    "id": 107,
+    "description": "Point your phone at the sky to identify planets, stars, and constellations in real-time.",
+    "size": 350,
+    "reviews": 15600,
+    "ratingAvg": 4.9,
+    "downloads": 800000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 50 },
+      { "name": "3 star", "count": 250 },
+      { "name": "4 star", "count": 1200 },
+      { "name": "5 star", "count": 14000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/tpgVM86k/Gemini-Generated-Image-wpa6q6wpa6q6wpa6.png",
+    "title": "BudgetBuddy",
+    "companyName": "FinFree Solutions",
+    "id": 108,
+    "description": "BudgetBuddy provides a holistic financial management solution designed to demystify your personal economy through automation and elegant visualization. By securely syncing with your various bank accounts, the app automatically categorizes every transaction, giving you an instant overview of where your money is going.\n\nThe platform's intelligent tracking system identifies recurring subscriptions and hidden fees, allowing you to optimize your monthly expenses with a single tap. Customizable budget limits and proactive alerts ensure that you are always aware of your spending margins before you reach a critical threshold.\n\nBeyond basic tracking, BudgetBuddy offers robust goal-setting tools that help you plan for major life events, from purchasing a home to building an emergency fund. With intuitive charts that project your future wealth based on current habits, the app provides the clarity needed to make long-term financial freedom an achievable reality.",
+    "size": 55,
+    "reviews": 9400,
+    "ratingAvg": 4.3,
+    "downloads": 600000,
+    "ratings": [
+      { "name": "1 star", "count": 700 },
+      { "name": "2 star", "count": 400 },
+      { "name": "3 star", "count": 1100 },
+      { "name": "4 star", "count": 2200 },
+      { "name": "5 star", "count": 5000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/YBj77JM2/Gemini-Generated-Image-squalisqualisqua.png",
+    "title": "SwiftCode Mobile",
+    "companyName": "DevTools Corp",
+    "id": 109,
+    "description": "SwiftCode Mobile is a world-class integrated development environment (IDE) engineered for high-performance programming on mobile devices. Supporting a wide range of languages including Python, JavaScript, and Rust, it provides a desktop-class coding experience wherever you are.\n\nThe app features an intelligent code completion engine, a multi-tab editor, and a fully functional terminal for executing scripts and managing packages. With native Git integration, you can pull repositories, manage branches, and commit changes directly to platforms like GitHub or GitLab without switching apps.\n\nTo ensure a seamless workflow, SwiftCode includes a robust debugger and an extensible plugin system that allows you to customize your environment with themes and custom keybindings. It is the definitive tool for developers who refuse to let their mobility limit their technical productivity or creativity.",
+    "size": 190,
+    "reviews": 1800,
+    "ratingAvg": 4.1,
+    "downloads": 50000,
+    "ratings": [
+      { "name": "1 star", "count": 150 },
+      { "name": "2 star", "count": 100 },
+      { "name": "3 star", "count": 250 },
+      { "name": "4 star", "count": 400 },
+      { "name": "5 star", "count": 900 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/SpJScgB/Gemini-Generated-Image-w9zoiiw9zoiiw9zo.png",
+    "title": "TrailBlazer",
+    "companyName": "Outdoor Adventures",
+    "id": 110,
+    "description": "TrailBlazer is the essential companion for the modern explorer, providing high-resolution topographic maps that remain fully functional without a cellular connection. Whether you are navigating dense forests or scaling mountain peaks, our precision GPS tracking ensures you stay on the right path.\n\nThe application features a vast database of community-verified trails, complete with difficulty ratings, elevation profiles, and real-time weather alerts specific to your exact coordinates. Users can record their journeys, mark waypoints, and share photos of hidden vistas with a global network of outdoor enthusiasts.\n\nSafety is prioritized through an integrated SOS feature and live-location sharing for trusted contacts. By combining robust offline technology with a deep sense of community, TrailBlazer empowers you to push your boundaries while ensuring you always have a reliable way back home.",
+    "size": 220,
+    "reviews": 25000,
+    "ratingAvg": 4.4,
+    "downloads": 1200000,
+    "ratings": [
+      { "name": "1 star", "count": 1000 },
+      { "name": "2 star", "count": 800 },
+      { "name": "3 star", "count": 3200 },
+      { "name": "4 star", "count": 6000 },
+      { "name": "5 star", "count": 14000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/Kx562bN0/Gemini-Generated-Image-ah6l59ah6l59ah6l.png",
+    "title": "Vortex Gaming",
+    "companyName": "Nebula Games",
+    "id": 111,
+    "description": "Vortex Gaming democratizes the world of high-end interactive entertainment by bringing AAA titles to your smartphone via the power of the cloud. By streaming games from high-performance remote servers, the app eliminates the need for expensive consoles or PC hardware, requiring only a stable internet connection.\n\nThe platform supports a massive library of modern hits and classic favorites, all optimized for touch controls or external Bluetooth controllers. With native support for 4K resolution and low-latency input, you can experience breathtaking graphics and responsive gameplay that rivals traditional dedicated gaming systems.\n\nSocial features are built into the core experience, allowing you to host multiplayer sessions, stream your gameplay to friends, and join community tournaments with a single tap. Vortex Gaming is not just a service; it is a portal to an infinite universe of high-fidelity gaming that fits right in your pocket.",
+    "size": 45,
+    "reviews": 62000,
+    "ratingAvg": 3.7,
+    "downloads": 3000000,
+    "ratings": [
+      { "name": "1 star", "count": 12000 },
+      { "name": "2 star", "count": 8000 },
+      { "name": "3 star", "count": 10000 },
+      { "name": "4 star", "count": 12000 },
+      { "name": "5 star", "count": 20000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/6cFjRLXt/Gemini-Generated-Image-5cgxrs5cgxrs5cgx.png",
+    "title": "EcoScan",
+    "companyName": "GreenWorld Org",
+    "id": 112,
+    "description": "A minimalist meditation and productivity timer designed to reduce burnout and increase focus.",
+    "size": 38,
+    "reviews": 4100,
+    "ratingAvg": 4.5,
+    "downloads": 200000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 100 },
+      { "name": "3 star", "count": 500 },
+      { "name": "4 star", "count": 1000 },
+      { "name": "5 star", "count": 2400 }
+    ]
+  }
+]
