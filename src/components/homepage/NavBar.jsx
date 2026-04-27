@@ -1,82 +1,139 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { useState } from "react";
 
 const NavBar = () => {
-  const links = (
-    <>
-      <Link
-        className={({ isActive }) =>
-          isActive ? "text-violet-700 underline" : "text-black"
-        }
-        href="/"
-      >
-        <li className="m-2 font-semibold">Home</li>
-      </Link>
-      <Link
-        className={({ isActive }) =>
-          isActive ? "text-violet-700 underline" : "text-black"
-        }
-        href="/apps"
-      >
-        <li className="m-2 font-semibold">Apps</li>
-      </Link>
-      <Link
-        className={({ isActive }) =>
-          isActive ? "text-violet-700 underline" : "text-black"
-        }
-        href="installation"
-      >
-        <li className="m-2 font-semibold">Installation</li>
-      </Link>
-    </>
-  );
+  const pathname = usePathname();
+  const [isOpen, setIsOpen] = useState(false);
+
+  const routes = [
+    { name: "Home", path: "/" },
+    { name: "Items", path: "/items" },
+    { name: "About", path: "/about" },
+    { name: "Contact", path: "/contact" },
+  ];
+
+  const authRoutes = [
+    { name: "Login", path: "/login" },
+    { name: "Register", path: "/register" },
+  ];
+
   return (
-    <div className="navbar bg-base-100 shadow-sm">
-      <div className="navbar-start">
-        <div className="dropdown">
-          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
+    <nav className="bg-white shadow-md">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-16">
+          <div className="flex items-center">
+            <Link href="/" className="text-xl font-bold text-gray-800">
+              SoftIo
+            </Link>
+          </div>
+
+          {/* Desktop main menu */}
+          <div className="hidden md:flex items-center space-x-8">
+            {routes.map((route) => (
+              <Link
+                key={route.path}
+                href={route.path}
+                className={`px-3 py-2 rounded-md text-sm font-medium ${
+                  pathname === route.path
+                    ? "text-blue-600 bg-blue-50"
+                    : "text-gray-700 hover:text-blue-600 hover:bg-gray-50"
+                }`}
+              >
+                {route.name}
+              </Link>
+            ))}
+          </div>
+
+          {/* Desktop auth menu */}
+          <div className="hidden md:flex items-center space-x-4">
+            {authRoutes.map((route) => (
+              <Link
+                key={route.path}
+                href={route.path}
+                className={`px-3 py-2 rounded-md text-sm font-medium ${
+                  pathname === route.path
+                    ? "text-blue-600 bg-blue-50"
+                    : "text-gray-700 hover:text-blue-600 hover:bg-gray-50"
+                }`}
+              >
+                {route.name}
+              </Link>
+            ))}
+          </div>
+
+          {/* Mobile menu button */}
+          <div className="md:hidden flex items-center">
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="text-gray-700 hover:text-blue-600 focus:outline-none focus:text-blue-600"
             >
-              {" "}
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h8m-8 6h16"
-              />{" "}
-            </svg>
+              <svg
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                {isOpen ? (
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                ) : (
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                )}
+              </svg>
+            </button>
           </div>
-          <ul
-            tabIndex="-1"
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
-          >
-            {links}
-          </ul>
         </div>
-        <Link href="/">
-          <div className="flex justify-center items-center gap-2">
-            <img className="w-10 h-10" src={logoImg} alt="" />
-            <h1 className="bg-gradient-to-r from-[#381a7e] to-[#6c3bb1] bg-clip-text text-transparent font-primary font-bold text-xl ">
-              Soft.IO
-            </h1>
+
+        {isOpen && (
+          <div className="md:hidden">
+            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
+              {routes.map((route) => (
+                <Link
+                  key={route.path}
+                  href={route.path}
+                  className={`block px-3 py-2 rounded-md text-base font-medium ${
+                    pathname === route.path
+                      ? "text-blue-600 bg-blue-50"
+                      : "text-gray-700 hover:text-blue-600 hover:bg-gray-50"
+                  }`}
+                  onClick={() => setIsOpen(false)}
+                >
+                  {route.name}
+                </Link>
+              ))}
+              <div className="border-t pt-2 mt-2">
+                {authRoutes.map((route) => (
+                  <Link
+                    key={route.path}
+                    href={route.path}
+                    className={`block px-3 py-2 rounded-md text-base font-medium ${
+                      pathname === route.path
+                        ? "text-blue-600 bg-blue-50"
+                        : "text-gray-700 hover:text-blue-600 hover:bg-gray-50"
+                    }`}
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {route.name}
+                  </Link>
+                ))}
+              </div>
+            </div>
           </div>
-        </Link>
+        )}
       </div>
-      <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">{links}</ul>
-      </div>
-      <div className="navbar-end">
-        <Link target="_blank" href="https://github.com/golamsarwar96">
-          <button className="btn text-white bg-gradient-to-r from-[#632EE3] to-[#9F62F2]">
-            Contribute
-          </button>
-        </Link>
-      </div>
-    </div>
+    </nav>
   );
 };
 
