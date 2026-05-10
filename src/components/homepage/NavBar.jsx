@@ -3,10 +3,12 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import { useAuth } from "@/context/AuthContext";
 
 const NavBar = () => {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
+  const { user, logOut } = useAuth();
 
   const routes = [
     { name: "Home", path: "/" },
@@ -15,10 +17,13 @@ const NavBar = () => {
     { name: "Contact", path: "/contact" },
   ];
 
-  const authRoutes = [
-    { name: "Login", path: "/login" },
-    { name: "Register", path: "/register" },
-  ];
+  const handleLogout = async () => {
+    try {
+      await logOut();
+    } catch (error) {
+      console.error("Logout error:", error);
+    }
+  };
 
   return (
     <nav className="bg-white shadow-md">
@@ -49,19 +54,38 @@ const NavBar = () => {
 
           {/* Desktop auth menu */}
           <div className="hidden md:flex items-center space-x-4">
-            {authRoutes.map((route) => (
-              <Link
-                key={route.path}
-                href={route.path}
-                className={`px-3 py-2 rounded-md text-sm font-medium ${
-                  pathname === route.path
-                    ? "text-blue-600 bg-blue-50"
-                    : "text-gray-700 hover:text-blue-600 hover:bg-gray-50"
-                }`}
-              >
-                {route.name}
-              </Link>
-            ))}
+            {!user ? (
+              <>
+                <Link
+                  href="/login"
+                  className={`px-3 py-2 rounded-md text-sm font-medium ${
+                    pathname === "/login"
+                      ? "text-blue-600 bg-blue-50"
+                      : "text-gray-700 hover:text-blue-600 hover:bg-gray-50"
+                  }`}
+                >
+                  Login
+                </Link>
+                <Link
+                  href="/register"
+                  className="px-4 py-2 rounded-md text-sm font-medium bg-blue-600 text-white hover:bg-blue-700 transition-colors"
+                >
+                  Register
+                </Link>
+              </>
+            ) : (
+              <div className="flex items-center space-x-4">
+                <span className="text-sm text-gray-700 font-medium">
+                  Hi, {user.displayName || user.email.split("@")[0]}
+                </span>
+                <button
+                  onClick={handleLogout}
+                  className="px-4 py-2 rounded-md text-sm font-medium border border-gray-300 text-gray-700 hover:bg-gray-50 transition-colors"
+                >
+                  Logout
+                </button>
+              </div>
+            )}
           </div>
 
           {/* Mobile menu button */}
@@ -114,20 +138,43 @@ const NavBar = () => {
                 </Link>
               ))}
               <div className="border-t pt-2 mt-2">
-                {authRoutes.map((route) => (
-                  <Link
-                    key={route.path}
-                    href={route.path}
-                    className={`block px-3 py-2 rounded-md text-base font-medium ${
-                      pathname === route.path
-                        ? "text-blue-600 bg-blue-50"
-                        : "text-gray-700 hover:text-blue-600 hover:bg-gray-50"
-                    }`}
-                    onClick={() => setIsOpen(false)}
-                  >
-                    {route.name}
-                  </Link>
-                ))}
+                {!user ? (
+                  <>
+                    <Link
+                      href="/login"
+                      className={`block px-3 py-2 rounded-md text-base font-medium ${
+                        pathname === "/login"
+                          ? "text-blue-600 bg-blue-50"
+                          : "text-gray-700 hover:text-blue-600 hover:bg-gray-50"
+                      }`}
+                      onClick={() => setIsOpen(false)}
+                    >
+                      Login
+                    </Link>
+                    <Link
+                      href="/register"
+                      className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50"
+                      onClick={() => setIsOpen(false)}
+                    >
+                      Register
+                    </Link>
+                  </>
+                ) : (
+                  <>
+                    <div className="px-3 py-2 text-sm text-gray-500 italic">
+                      Logged in as {user.email}
+                    </div>
+                    <button
+                      onClick={() => {
+                        handleLogout();
+                        setIsOpen(false);
+                      }}
+                      className="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-red-600 hover:bg-red-50"
+                    >
+                      Logout
+                    </button>
+                  </>
+                )}
               </div>
             </div>
           </div>
